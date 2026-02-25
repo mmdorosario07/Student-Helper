@@ -1,0 +1,10 @@
+#ignorar o ficheiro de compilação final
+
+student-helper
+
+#ignorar ficheiros de dados
+
+*.data
+
+
+

@@ -1,0 +1,43 @@
+O projeto tem em ideia criar um sistema capaz de ajudar os estudantes a organizar sua vida escolar...
+
+banner
+*----------------------------------------*
+|                                        |
+|         STUDENT.HELPER by Tagg         |
+|                                        |
+*----------------------------------------*
+
+
+Add account
+
+insert new username: [username]
+if username in db.data
+	ERROR: Username is already taken
+	insert new username: [username]
+create a password: [password]  {1}
+confirm password: [password]
+if [password does not match]
+	ERROR: Password does not match. Try again
+	goto {1}
+else
+	db.AddUser [username] [password]
+--------------------------------------------------
+login 
+
+Insert username: [username]
+Insert password: [password]
+if not in users
+	ERROR: User Not Avaliable. Try Again
+else
+	Show Message: Welcome [username]
+-------------------------------------------------
+create subject
+
+insert subject name: [subject.name]  {2}
+if subject.name already exist:
+	ERROR subject.name alrady taken
+	goto {2}
+insert docent: [docent.name]
+if docent.name not in db
+	db.AddDocent
+
