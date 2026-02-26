@@ -6,5 +6,7 @@ student-helper
 
 *.data
 
+#ignorar ficherios de saida
 
+output
 
